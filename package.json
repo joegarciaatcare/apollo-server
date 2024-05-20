@@ -102,7 +102,7 @@
     "cspell": "5.21.2",
     "deep-freeze": "0.0.1",
     "express": "4.18.2",
-    "fastify": "3.29.3",
+    "fastify": "^4.27.0",
     "form-data": "4.0.0",
     "graphql": "15.8.0",
     "graphql-tag": "2.12.6",
@@ -126,8 +126,8 @@
     "rollup": "2.79.1",
     "supertest": "6.3.3",
     "test-listen": "1.1.0",
-    "ts-jest": "28.0.8",
-    "typescript": "4.7.4"
+    "ts-jest": "^28.0.8",
+    "typescript": "^5.4.5"
   },
   "jest": {
     "projects": [

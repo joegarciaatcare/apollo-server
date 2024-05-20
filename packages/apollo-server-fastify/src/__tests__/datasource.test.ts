@@ -45,7 +45,9 @@ const resolvers = {
 let restCalls = 0;
 const restAPI = fastify();
 
-restAPI.get<any>('/id/:id', (request, reply) => {
+restAPI.get<{
+  Params: {id: string},
+}>('/id/:id', (request, reply) => {
   const id = request.params.id;
   restCalls++;
   reply.header('Content-Type', 'application/json');
@@ -53,7 +55,9 @@ restAPI.get<any>('/id/:id', (request, reply) => {
   reply.send({ id });
 });
 
-restAPI.get<any>('/str/:id', (request, reply) => {
+restAPI.get<{
+  Params: {id: string},
+}>('/str/:id', (request, reply) => {
   const id = request.params.id;
   restCalls++;
   reply.header('Content-Type', 'text/plain');
